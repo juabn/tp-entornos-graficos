@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyMuch - Iniciar Sesión</title>
+</head>
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header class="encabezado-sitio">
+        <div class="logo">
+            <p><a href="index.html"><strong>FlyMuch</strong></a></p>
+        </div>
+        <nav class="navegacion-usuario" aria-label="Navegación de usuario">
+            <ul>
+                <li><a href="registro.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+        
+        <h1>Iniciar Sesión</h1>
+
+        <section class="seccion-login" aria-label="Formulario de inicio de sesión">
+            <h2>Accede a tu cuenta en FlyMuch</h2>
+            <p>Ingresa tus credenciales para acceder a tus reservas o gestionar tu aerolínea.</p>
+
+            <form action="usuario-menu.html" method="post" class="formulario-login">
+                
+                <div class="campo-formulario">
+                    <label for="identificador-usuario">Nombre de usuario o Email *</label>
+                    <input type="text" id="identificador-usuario" name="usuario" placeholder="Ej: usuario@correo.com" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="clave-usuario">Contraseña *</label>
+                    <input type="password" id="clave-usuario" name="clave" placeholder="Ingresa tu contraseña" required>
+                </div>
+
+                <div class="enlaces-adicionales">
+                    <p><a href="recuperar-contrasena.html">¿Olvidaste tu contraseña?</a></p>
+                    <p>¿Aún no tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+                </div>
+
+                <div class="campo-boton">
+                    <button type="submit" class="boton-iniciar">Iniciar Sesión</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con Mapa del Sitio permanente -->
+    <footer class="pie-pagina">
+        <section class="mapa-sitio" aria-label="Mapa del sitio">
+            <h2>Mapa del Sitio</h2>
+            <div class="columnas-mapa">
+                <div class="columna-mapa">
+                    <h3>Acceso y Registro</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Register</a></li>
+                        <li><a href="recuperar-contrasena.html">Recuperar contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Navegación Principal</h3>
+                    <ul>
+                        <li><a href="index.html">Página Principal</a></li>
+                        <li><a href="acerca-de-nosotros.html">Acerca de Nosotros</a></li>
+                        <li><a href="buscar-vuelos.html">Buscar Vuelos</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Información y Ayuda</h3>
+                    <ul>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Gestión de Usuario</h3>
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="historial-compras.html">Historial de Compras</a></li>
+                        <li><a href="usuario-menu.html">Panel Pasajero</a></li>
+                        <li><a href="ceo-menu.html">Panel CEO</a></li>
+                        <li><a href="admin-menu.html">Panel Administrador</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="creditos">
+            <p>&copy; 2026 FlyMuch - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

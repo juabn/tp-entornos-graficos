@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyMuch - Mi Perfil</title>
+</head>
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header class="encabezado-sitio">
+        <div class="logo">
+            <p><a href="index.html"><strong>FlyMuch</strong></a></p>
+        </div>
+        <nav class="navegacion-usuario" aria-label="Navegación de usuario">
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+        
+        <h1>Perfil</h1>
+
+        <section class="seccion-datos-perfil" aria-label="Datos personales del usuario">
+            <h2>Actualización de datos personales</h2>
+            <p>Desde esta sección puedes modificar tus preferencias e información de contacto.</p>
+
+            <form action="perfil.html" method="post" class="formulario-perfil">
+                
+                <div class="campo-formulario">
+                    <label for="campo-nombre-usuario">Nombre usuario *</label>
+                    <input type="text" id="campo-nombre-usuario" name="nombre_usuario" placeholder="Campo para nuevo nombre" value="Juan Pérez" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="campo-telefono-usuario">Telefono Usuario *</label>
+                    <input type="tel" id="campo-telefono-usuario" name="telefono_usuario" placeholder="Campo para nuevo telefono" value="+54 9 341 5551234" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="campo-email-usuario">EmailUsuario</label>
+                    <input type="email" id="campo-email-usuario" name="email_usuario" value="juan.perez@ejemplo.com" readonly>
+                    <small>El correo electrónico está verificado y no puede modificarse directamente.</small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="campo-tipo-usuario">TipoUsuario</label>
+                    <input type="text" id="campo-tipo-usuario" name="tipo_usuario" value="Usuario/Cliente (Pasajero)" readonly>
+                </div>
+
+                <div class="campo-boton">
+                    <button type="submit" class="boton-guardar">Guardar cambios</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con Mapa del Sitio permanente -->
+    <footer class="pie-pagina">
+        <section class="mapa-sitio" aria-label="Mapa del sitio">
+            <h2>Mapa del Sitio</h2>
+            <div class="columnas-mapa">
+                <div class="columna-mapa">
+                    <h3>Acceso y Registro</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Register</a></li>
+                        <li><a href="recuperar-contrasena.html">Recuperar contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Navegación Principal</h3>
+                    <ul>
+                        <li><a href="index.html">Página Principal</a></li>
+                        <li><a href="acerca-de-nosotros.html">Acerca de Nosotros</a></li>
+                        <li><a href="buscar-vuelos.html">Buscar Vuelos</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Información y Ayuda</h3>
+                    <ul>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Gestión de Usuario</h3>
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="historial-compras.html">Historial de Compras</a></li>
+                        <li><a href="usuario-menu.html">Panel Pasajero</a></li>
+                        <li><a href="ceo-menu.html">Panel CEO</a></li>
+                        <li><a href="admin-menu.html">Panel Administrador</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="creditos">
+            <p>&copy; 2026 FlyMuch - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

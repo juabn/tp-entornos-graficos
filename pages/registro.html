@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyMuch - Registro de Usuario</title>
+</head>
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header class="encabezado-sitio">
+        <div class="logo">
+            <p><a href="index.html"><strong>FlyMuch</strong></a></p>
+        </div>
+        <nav class="navegacion-usuario" aria-label="Navegación de usuario">
+            <ul>
+                <li><a href="registro.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+        
+        <h1>Registro de Usuario</h1>
+
+        <section class="seccion-registro" aria-label="Formulario de registro en FlyMuch">
+            <h2>Crea tu cuenta</h2>
+            <p>Por favor completa los siguientes datos obligatorios para registrarte en el sistema.</p>
+
+            <form action="login.html" method="post" class="formulario-registro">
+                
+                <div class="campo-formulario">
+                    <label for="nombre-registro">Nombre de usuario *</label>
+                    <input type="text" id="nombre-registro" name="nombre_usuario" placeholder="Ej: juanperez26" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email-registro">Correo electrónico *</label>
+                    <input type="email" id="email-registro" name="email_usuario" placeholder="ejemplo@correo.com" required>
+                    <small>Te enviaremos un enlace de verificación a esta casilla.</small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="clave-registro">Contraseña *</label>
+                    <input type="password" id="clave-registro" name="clave_usuario" placeholder="Mínimo 8 caracteres" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="confirmar-clave-registro">Confirmar contraseña *</label>
+                    <input type="password" id="confirmar-clave-registro" name="confirmar_clave" placeholder="Repite tu contraseña" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="telefono-registro">Teléfono de contacto *</label>
+                    <input type="tel" id="telefono-registro" name="telefono_usuario" placeholder="Ej: +54 9 341 1234567" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="tipo-usuario-registro">Tipo de cuenta *</label>
+                    <select id="tipo-usuario-registro" name="tipo_usuario" required>
+                        <option value="usuario">Usuario / Pasajero</option>
+                        <option value="ceo_aerolinea">CEO de Aerolínea (Requiere autorización de Administrador)</option>
+                    </select>
+                </div>
+
+                <div class="campo-terminos">
+                    <input type="checkbox" id="acepto-terminos" name="terminos" required>
+                    <label for="acepto-terminos">Acepto los términos del servicio y las políticas de privacidad del sitio *</label>
+                </div>
+
+                <div class="enlaces-adicionales">
+                    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+                </div>
+
+                <div class="campo-boton">
+                    <button type="submit" class="boton-registrarse">Registrarse</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con Mapa del Sitio permanente -->
+    <footer class="pie-pagina">
+        <section class="mapa-sitio" aria-label="Mapa del sitio">
+            <h2>Mapa del Sitio</h2>
+            <div class="columnas-mapa">
+                <div class="columna-mapa">
+                    <h3>Acceso y Registro</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Register</a></li>
+                        <li><a href="recuperar-contrasena.html">Recuperar contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Navegación Principal</h3>
+                    <ul>
+                        <li><a href="index.html">Página Principal</a></li>
+                        <li><a href="acerca-de-nosotros.html">Acerca de Nosotros</a></li>
+                        <li><a href="buscar-vuelos.html">Buscar Vuelos</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Información y Ayuda</h3>
+                    <ul>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="columna-mapa">
+                    <h3>Gestión de Usuario</h3>
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="historial-compras.html">Historial de Compras</a></li>
+                        <li><a href="usuario-menu.html">Panel Pasajero</a></li>
+                        <li><a href="ceo-menu.html">Panel CEO</a></li>
+                        <li><a href="admin-menu.html">Panel Administrador</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="creditos">
+            <p>&copy; 2026 FlyMuch - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
